@@ -19,22 +19,25 @@
 <body>
 <div id="app">
 
-    <div class="container-fluid">
+    <div class="container-fluid " id="app-content">
         <div class="sidebar">
-            <div class="sidebar-logo">
-                <h2 class="text-center">{{ config('app.name') }}</h2>
-                <hr>
+            <div class="sidebar-logo text-center">
+                {{ config('app.name') }}
             </div>
+            <hr>
             <nav class="nav flex-column sidebar-nav">
                 <li class="active">
                     <a class="nav-link align-middle" href="#">
-                        <i class="align-middle icon-dashboard-speed-streamline"></i>
-                        Dashboard
+                        <i class="align-middle icon-settings-streamline"></i>
+                        <span>Dashboard</span>
                     </a>
                 </li>
-                <li><a class="nav-link" href="#">Link</a></li>
-                <li><a class="nav-link" href="#">Link</a></li>
-                <li><a class="nav-link" href="#">Link</a></li>
+                <li>
+                    <a class="nav-link align-middle" href="#">
+                        <i class="align-middle icon-photo-pictures-streamline"></i>
+                        <span>Páginas</span>
+                    </a>
+                </li>
             </nav>
         </div>
         <div class="row content">
@@ -47,5 +50,6 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+@yield('scripts')
 </body>
 </html>
