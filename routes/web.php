@@ -11,10 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'uses' => 'HomeController@index',
+    'as' => 'home'
+]);
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::group(['middleware' => 'admin'], function(){
+
+    Route::get('/admin', [
+        'uses' => 'AdminController@index',
+        'as' => 'admin.index'
+    ]);
+
+});
