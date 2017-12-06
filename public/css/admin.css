@@ -9731,6 +9731,7 @@ body {
 
 #app {
   font-family: 'Raleway', sans-serif;
+  /* when sidebar is collapsed */
 }
 
 #app a {
@@ -9771,6 +9772,10 @@ body {
 #app .sidebar .sidebar-nav li a i {
   font-size: 22px;
   margin-right: 8px;
+}
+
+#app .sidebar .sidebar-nav li:hover a {
+  color: #68B3C8;
 }
 
 #app .sidebar .sidebar-nav li.active a {

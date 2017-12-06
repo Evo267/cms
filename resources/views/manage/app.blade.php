@@ -21,7 +21,7 @@
                         <i class="icon-photo-pictures-streamline align-middle"></i>
                     </div>
                     <div class="col-sm-7 text-right">
-                        Pages
+                        Páginas
                         <h2>123</h2>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         <i class="icon-photo-pictures-streamline align-middle"></i>
                     </div>
                     <div class="col-sm-7 text-right">
-                        Pages
+                        Páginas
                         <h2>123</h2>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         <i class="icon-photo-pictures-streamline align-middle"></i>
                     </div>
                     <div class="col-sm-7 text-right">
-                        Pages
+                        Páginas
                         <h2>123</h2>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <i class="icon-photo-pictures-streamline align-middle"></i>
                     </div>
                     <div class="col-sm-7 text-right">
-                        Pages
+                        Páginas
                         <h2>123</h2>
                     </div>
                 </div>
@@ -70,17 +70,7 @@
     </div>
 
     <button class="btn btn-primary" id="toggleSidebarBtn">toggle sidebar</button>
-    <li>
-        <a href="{{ route('logout') }}"
-           onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-            Logout
-        </a>
 
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            {{ csrf_field() }}
-        </form>
-    </li>
 </div>
 
 @endsection

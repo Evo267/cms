@@ -63,6 +63,12 @@ html, body {
           }
         }
 
+        &:hover{
+          a{
+            color: $primary-color;
+          }
+        }
+
       }
 
       li.active{
@@ -75,6 +81,7 @@ html, body {
     }
   }
 
+  /* when sidebar is collapsed */
   .sidebar-toggled{
     .sidebar{
       width: 60px;
