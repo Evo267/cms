@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="col-md-12 no-padding">
+<div class="col-md-12 no-overflow-x no-padding">
 
     <div class="breadcrumbs">
         <nav aria-label="breadcrumb" role="navigation">
@@ -14,7 +14,7 @@
     </div>
 
     <div class="row panels">
-        <div class="col-md-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card">
                 <div class="row card-body">
                     <div class="col-sm-5 card-icon text-center">
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card">
                 <div class="row card-body">
                     <div class="col-sm-5 card-icon text-center">
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card">
                 <div class="row card-body">
                     <div class="col-sm-5 card-icon text-center">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-12 col-md-6 col-lg-3">
             <div class="card">
                 <div class="row card-body">
                     <div class="col-sm-5 card-icon text-center">
