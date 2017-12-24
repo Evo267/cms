@@ -9822,9 +9822,12 @@ body {
 #app .content .breadcrumbs {
   border-bottom: 1px solid #DDD;
   background: white;
+  padding: 19px 0px 5px 0px;
 }
 
 #app .content .breadcrumbs ol.breadcrumb {
+  padding: 0;
+  padding-left: 30px;
   background: transparent;
 }
 
@@ -9859,6 +9862,29 @@ body {
 
   #app .content {
     margin-left: 260px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #app .sidebar {
+    width: 60px;
+  }
+
+  #app .sidebar .sidebar-logo {
+    font-size: 16px;
+    padding: 12px 0px;
+  }
+
+  #app .sidebar .sidebar-nav li {
+    padding: 0;
+  }
+
+  #app .sidebar .sidebar-nav li span {
+    display: none;
+  }
+
+  #app .sidebar .sidebar-nav li i {
+    margin-right: 0;
   }
 }
 

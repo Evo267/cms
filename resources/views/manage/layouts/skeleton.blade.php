@@ -39,10 +39,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('logout') }}"
+                    <a class="nav-link align-middle" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
-                        Logout
+                        <i class="align-middle icon-lock-locker-streamline"></i>
+                        <span>Logout</span>
                     </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -61,6 +62,7 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+
 @yield('scripts')
 </body>
 </html>
