@@ -27,6 +27,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
 #app {
 
   a{
@@ -98,7 +102,7 @@ html, body {
 
     .breadcrumbs{
       border-bottom:1px solid #DDD;
-      background: white;
+      background: transparent;
       padding: 19px 0px 5px 0px;
       ol.breadcrumb{
         padding:0;
@@ -116,9 +120,7 @@ html, body {
         box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
         border-radius: 6px;
         color: $normal-color;
-        h2{
-          text-shadow:0px 1px 4px rgba(0, 0, 0, 0.1);
-        }
+
         .card-icon{
           font-size: 48px;
           color: $darker-color;
@@ -128,6 +130,23 @@ html, body {
         }
       }
 
+    }
+
+    .crup-wrapper{
+      padding: 25px;
+      .crud{
+        background: white;
+        padding: 20px;
+        border:1px solid #DDD;
+
+        .badge-primary{
+          background: $primary-color;
+        }
+
+        .table{
+          margin-top: 30px;
+        }
+      }
     }
   }
 

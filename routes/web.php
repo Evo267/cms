@@ -29,4 +29,14 @@ Route::group(['middleware' => 'admin'], function(){
         'as' => 'admin.index'
     ]);
 
+    Route::get('/admin/paginas', [
+        'uses' => 'AdminController@pages',
+        'as' => 'admin.pages'
+    ]);
+
+    Route::get('/admin/paginas/criar', [
+        'uses' => 'AdminController@pagesCreate',
+        'as' => 'admin.pages.create'
+    ]);
+
 });

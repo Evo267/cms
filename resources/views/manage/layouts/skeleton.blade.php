@@ -26,14 +26,14 @@
             </div>
             <hr>
             <nav class="nav flex-column sidebar-nav">
-                <li class="active">
-                    <a class="nav-link align-middle" href="#">
+                <li class="{{ $activePage == 'index' ? 'active' : '' }}">
+                    <a class="nav-link align-middle" href="{{ route('admin.index') }}">
                         <i class="align-middle icon-settings-streamline"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a class="nav-link align-middle" href="#">
+                <li class="{{ $activePage == 'pages' ? 'active' : '' }}">
+                    <a class="nav-link align-middle" href="{{ route('admin.pages') }}">
                         <i class="align-middle icon-photo-pictures-streamline"></i>
                         <span>Páginas</span>
                     </a>

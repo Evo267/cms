@@ -4,14 +4,7 @@
 
 <div class="col-md-12 no-overflow-x no-padding">
 
-    <div class="breadcrumbs">
-        <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ route('admin.index') }}">{{ config('app.name') }}</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-            </ol>
-        </nav>
-    </div>
+    @include('manage.partials.breadcrumbs')
 
     <div class="row panels">
         <div class="col-sm-12 col-md-6 col-lg-3">

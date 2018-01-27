@@ -9734,6 +9734,10 @@ body {
   overflow-x: hidden;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 #app {
   font-family: 'Raleway', sans-serif;
 }
@@ -9800,7 +9804,7 @@ body {
 
 #app .content .breadcrumbs {
   border-bottom: 1px solid #DDD;
-  background: white;
+  background: transparent;
   padding: 19px 0px 5px 0px;
 }
 
@@ -9823,10 +9827,6 @@ body {
   color: #66615B;
 }
 
-#app .content .panels .card h2 {
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-}
-
 #app .content .panels .card .card-icon {
   font-size: 48px;
   color: #252422;
@@ -9834,6 +9834,24 @@ body {
 
 #app .content .panels .card .card-footer {
   font-size: 14px;
+}
+
+#app .content .crup-wrapper {
+  padding: 25px;
+}
+
+#app .content .crup-wrapper .crud {
+  background: white;
+  padding: 20px;
+  border: 1px solid #DDD;
+}
+
+#app .content .crup-wrapper .crud .badge-primary {
+  background: #68B3C8;
+}
+
+#app .content .crup-wrapper .crud .table {
+  margin-top: 30px;
 }
 
 #app .sidebar {
