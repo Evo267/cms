@@ -39,4 +39,9 @@ Route::group(['middleware' => 'admin'], function(){
         'as' => 'admin.pages.create'
     ]);
 
+    Route::post('/admin/pagina', [
+        'uses' => 'AdminController@storePage',
+        'as' => 'admin.pages.store'
+    ]);
+
 });

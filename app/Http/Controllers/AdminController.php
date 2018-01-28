@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 //use App\Models\Dashboard;
 
 use App\Page;
+use App\PageStatus;
 
 class AdminController extends Controller
 {
@@ -39,8 +40,14 @@ class AdminController extends Controller
     public function pagesCreate(){
         $this->activePage = 'pages';
 
+        $status = PageStatus::all();
+
         return view('manage.pages.new')
             ->with('activePage', $this->activePage);
+    }
+
+    public function storePage(Request $request){
+
     }
 }
 

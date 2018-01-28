@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePagesTable extends Migration
+class CreatePageStatusesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,18 @@ class CreatePagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pages', function (Blueprint $table) {
+        Schema::create('page_statuses', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('status_id')->unsigned();
-            $table->string('title');
-            $table->string('slug');
-            $table->text('body');
+            $table->string('name');
+            $table->string('display_name');
             $table->timestamps();
         });
+
+        DB::table('page_statuses')->insert(
+            array(
+                array('id' => '1', 'name' => 'published'),
+                array('id' => '2', 'name' => 'draft'),
+            ));
     }
 
     /**
@@ -30,6 +34,6 @@ class CreatePagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pages');
+        Schema::dropIfExists('page_statuses');
     }
 }
